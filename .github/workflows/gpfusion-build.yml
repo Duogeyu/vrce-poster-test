@@ -1,5 +1,5 @@
 name: GP Fusion Build Probe
-on: [push, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   probe:
     runs-on: ubuntu-22.04
