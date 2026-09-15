@@ -2,6 +2,6 @@ name: GP Fusion Build Probe
 on: [push, pull_request, workflow_dispatch]
 jobs:
   probe:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - run: echo actions-ok
+      - run: uname -a && echo actions-ok
